@@ -37,10 +37,9 @@ ___TEMPLATE_PARAMETERS___
     "simpleValueType": true,
     "valueValidators": [
       {
-        "type": "STRING_LENGTH",
+        "type": "REGEX",
         "args": [
-          12,
-          12
+          "^[0-9]{12}$"
         ]
       }
     ],
@@ -370,6 +369,6 @@ scenarios:
 
 ___NOTES___
 
-Created on 10/05/2021 à 11:27:33
+Created on 12/05/2021 à 06:20:50
 
 
