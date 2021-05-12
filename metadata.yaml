@@ -2,6 +2,6 @@ homepage: "https://tvty.tv/"
 documentation: "https://www.notion.so/tvty/GTM-Template-Measure-Basic-2004d5635eb9480b9f07547f6d107534"
 versions:
   # Latest version
-  - sha: 7400a9209c0ed553bd1ed9fb33510d52c1833ef1
+  - sha: 8e8c2f7a8fc66a4ce7451d1c1e81753d3113c80f
     changeNotes: Initial release.
   # Older versions
