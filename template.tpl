@@ -71,6 +71,7 @@ const queryPermission = require('queryPermission');
 const createArgumentsQueue = require('createArgumentsQueue');
 const setInWindow = require('setInWindow');
 const injectScript = require('injectScript');
+const encodeUriComponent = require('encodeUriComponent');
 
 const advertiserId = data.advertiserId;
 const step = data.step;
@@ -92,7 +93,7 @@ const tvty = createArgumentsQueue('tvty', 'tvty.cmd');
 setInWindow('TVTYObj', 'tvty');
 
 
-const url = 'https://u360.d-bi.fr/hmx' + advertiserId + '.js';
+const url = 'https://u360.d-bi.fr/hmx' + encodeUriComponent(advertiserId) + '.js';
 log('TVTY: Loading script ' + url);
 
 if (queryPermission('inject_script', url)) {
